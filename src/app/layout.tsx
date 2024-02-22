@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "@/components/NavBar";
+import MyProfile from "@/components/MyProfile";
 
 export default function RootLayout({
   children,
@@ -16,6 +17,7 @@ export default function RootLayout({
 
       <body className="bg-neutral-900 text-white">
         <Navbar />
+        <MyProfile />
         <div
           id="page-top-spacer"
           className="h-12 bg-gradient-to-t from-transparent to-neutral-800"

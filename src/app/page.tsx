@@ -1,16 +1,16 @@
+import Posts from "@/containers/blog/Posts";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className="container mx-auto">
-      <main>
-        <div className="space-y-4 mt-5">
-          <h1 className="text-center text-5xl">NextJS 13 Blog</h1>
-          <p className="text-center text-xl">
-            Welcome to a dynamic markdown blog using NextJS 13.
-          </p>
-        </div>
-      </main>
-    </div>
+    <main className="px-6 mx-auto">
+      <p className="mt-12 mb-12 text-3xl text-center dark:text-white">
+        안녕하세요. 👋&nbsp;
+        <span className="whitespace-nowrap">
+          <span className="font-bold">Subeen</span>의 블로그입니다.
+        </span>
+      </p>
+      <Posts />
+    </main>
   );
 }

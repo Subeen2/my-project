@@ -34,11 +34,22 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
     }
   });
 
+  console.log(items);
+
+  //   const blogPost: BlogPost = { // 5️⃣
+  //   id,
+  //   title: matterResult.data.title, // 이 방법으로 추출한 front matter의 데이터를 사용할 수 있다.
+  //   date: matterResult.data.date,
+  // };
+
+  // return blogPost;
+
   return items;
 }
 
 export function getAllPosts(fields: string[] = []) {
   const slugs = getPostSlugs();
+
   const posts = slugs
     .map((slug) => getPostBySlug(slug, fields))
     // sort posts by date in descending order
