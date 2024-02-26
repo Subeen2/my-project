@@ -1,3 +1,4 @@
+import { BlogPost } from "@/types/BlogPost";
 import { getAllPosts } from "../../../lib/api";
 import ListItem from "./ListItem";
 
@@ -9,15 +10,7 @@ export default function Posts() {
       <h2 className="text-4xl font-bold dark:text-white/90">Blog</h2>
       <ul className="w-full">
         {posts.map((post) => (
-          <ListItem
-            key={post.id}
-            post={{
-              id: 1,
-              title: "aa",
-              contents: "기기기",
-              date: "",
-            }}
-          />
+          <ListItem key={post.id} post={post} />
         ))}
       </ul>
     </section>

@@ -19,7 +19,7 @@ export default async function Post({ params }: any) {
       <h1 className="text-3xl mt-4 mb-0">{title}</h1>
       <p className="mt-0">{date}</p>
       <article>
-        <section>{contentHtml}</section> // ❌
+        <section>{contentHtml}</section>
         <p>
           <Link href="/">홈으로 가기</Link>
         </p>
